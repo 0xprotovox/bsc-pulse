@@ -1,0 +1,132 @@
+# ====================
+# SENSITIVE DATA - NEVER COMMIT
+# ====================
+.env
+.env.local
+.env.*.local
+.env.mainnet
+engine-auth-jwt
+*.pem
+*.key
+*.p12
+
+# API Keys and Secrets
+*secret*.txt
+*secret*.json
+*.key
+*.token
+credentials.json
+GITHUB-ACCESS-INFO.md
+
+# Claude Code
+.claude/
+
+# ====================
+# NODE.JS
+# ====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ====================
+# DOCKER & BLOCKCHAIN DATA
+# ====================
+geth-data/
+op-node-data/
+blockchain-data/
+base-node/
+*.tar.gz
+
+# Docker
+docker-compose.override.yml
+
+# ====================
+# LOGS
+# ====================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ====================
+# TESTING & COVERAGE
+# ====================
+coverage/
+.nyc_output/
+test-results/
+
+# ====================
+# OPERATING SYSTEM FILES
+# ====================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ====================
+# IDE & EDITOR FILES
+# ====================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ====================
+# TEMPORARY FILES
+# ====================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ====================
+# BUILD & CACHE
+# ====================
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# ====================
+# DOCUMENTATION (if generated)
+# ====================
+# docs/generated/
+
+# ====================
+# BACKUP FILES
+# ====================
+*.backup
+*.bak
+*.old
+
+# ====================
+# LARGE FILES (Optional - uncomment if needed)
+# ====================
+# *.mp4
+# *.zip
+# *.iso

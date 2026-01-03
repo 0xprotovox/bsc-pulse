@@ -1,0 +1,48 @@
+{
+  "name": "bsc-pulse",
+  "version": "1.0.0",
+  "description": "Real-time token price monitoring for BSC network with WebSocket support",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "node test-client.js",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write \"src/**/*.js\"",
+    "format:check": "prettier --check \"src/**/*.js\""
+  },
+  "keywords": [
+    "bsc",
+    "binance-smart-chain",
+    "pancakeswap",
+    "defi",
+    "price-monitoring",
+    "websocket",
+    "real-time",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xprotovox/bsc-pulse.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.2.4"
+  }
+}
