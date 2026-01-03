@@ -97,14 +97,14 @@ module.exports = {
   // BNB Price Sources (for multi-pool price averaging)
   bnbPriceSources: [
     {
-      address: '0x36696169C63e42cd08ce11f5deeBbCeBae652050', // PancakeSwap V3 WBNB/USDT 0.01%
+      address: '0x36696169C63e42cd08ce11f5deeBbCeBae652050', // PancakeSwap V3 USDT/WBNB 0.01%
       type: 'V3',
       fee: 100,
       weight: 1,
-      token0: 'WBNB',
-      token1: 'USDT',
+      token0: 'USDT',  // Token0 is USDT (0x55d398...)
+      token1: 'WBNB',  // Token1 is WBNB (0xbb4CdB9...)
       decimals0: 18,
-      decimals1: 18 // USDT on BSC has 18 decimals
+      decimals1: 18
     }
   ]
 };

@@ -472,11 +472,12 @@ class PriceMonitor {
       price = price * Math.pow(10, source.decimals0 - source.decimals1);
     }
     
-    // If USDC/WBNB pool (inverted), we need to flip the price
-    if (source.token0 === 'USDC' && source.token1 === 'WBNB') {
+    // sqrtPriceX96 gives token1/token0 ratio
+    // If stablecoin is token0, we need to invert to get USD per BNB
+    if ((source.token0 === 'USDC' || source.token0 === 'USDT' || source.token0 === 'BUSD') && source.token1 === 'WBNB') {
       price = 1 / price;
     }
-    
+
     return price;
   }
   
